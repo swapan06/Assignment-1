@@ -1,0 +1,45 @@
+Ques1:Write a java programto comparetwo sets and retain element whichare same on both sets?
+Ans1:
+package setdemo;
+import java.util.*;
+public class SetDemo {
+   public static void main(String[] args) {
+         HashSet hashset=new HashSet();
+   hashset.add("J");
+   hashset.add("A");
+   hashset.add("V");
+   hashset.add("A");
+  System.out.println(hashset);
+        HashSet hashset2=new HashSet();
+   //hashset2.add("J");
+   hashset2.add("A");
+   hashset2.add("V");
+   //hashset2.add("A");
+   hashset.retainAll(hashset2);
+   System.out.println(hashset);
+    }
+}
+
+Ques2:Write a programto associate the specifiedvalue withthe specifiedkey in a HashMap?
+Ans2:
+package Hashmapdemo1;
+import java.util.*;
+public class HashMapDemo1 {
+
+    
+    public static void main(String[] args) {
+        Map myObject=new HashMap();
+        myObject.put("cheez",853);
+        myObject.put("custurd",786);
+        myObject.put("roll",678);
+        myObject.put("puff",937);
+        {
+        System.out.println(myObject);
+        myObject.replace("roll",678,80);
+        System.out.println(myObject);
+        
+        
+    }
+    
+    }
+}
